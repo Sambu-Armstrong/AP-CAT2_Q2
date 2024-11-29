@@ -1,49 +1,74 @@
-REST API Project
-Sambu Amstrong .
-168205 .
-BBIT 2.2C 
+# REST API Project
+    Sambu Amstrong .
+    168205 .
+    BBIT 2.2C 
+
 This project demonstrates a simple REST API using FastAPI, managing a Product resource where you can create a product name(POS), description and price and also retrieve the products(GET)
 
-Installation
-Clone the Repository:
+## Installation
 
-git clone <repository_url>
-cd rest_api_project
-Create a Virtual Environment:
+1. **Clone the Repository**:
 
-python -m venv .venv
-Activate the Virtual Environment:
+    ```sh
+    git clone <repository_url>
+    cd rest_api_project
+    ```
 
-On PowerShell-
-.venv\Scripts\Activate
-On Git Bash
-source .venv/bin/activate
-Install Dependencies:
+2. **Create a Virtual Environment**:
 
-pip install -r requirements.txt
-Running the API Server
-Start the Development Server:
+    ```sh
+    python -m venv .venv
+    ```
 
-uvicorn app:app --reload
-Access the API:
+3. **Activate the Virtual Environment**:
 
-Open your browser and navigate to [http://127.0.0.1:8000]
+    - On PowerShell-
+        ```sh
+        .venv\Scripts\Activate
+        ```
+    - On Git Bash 
+        ```sh
+        source .venv/bin/activate
+        ```
 
-View Products:
+4. **Install Dependencies**:
 
-To see the list of products, navigate to [http://127.0.0.1:8000/products]
+    ```sh
+    pip install -r requirements.txt
+    ```
 
-Testing the API
-Use the provided client.py script to interact with the API, adding name, description and price of the product
+## Running the API Server
 
-Add New Products:
+1. **Start the Development Server**:
 
-python client.py
+    ```sh
+    uvicorn app:app --reload
+    ```
+
+2. **Access the API**:
+
+    Open your browser and navigate to [http://127.0.0.1:8000]
+
+3. **View Products**:
+
+    To see the list of products, navigate to [http://127.0.0.1:8000/products]
+
+## Testing the API
+
+Use the provided `client.py` script to interact with the API, adding name, description and price of the product
+
+1. **Add New Products**:
+
+    ```sh
+    python client.py
+    ```
 This will add new products and retrieve the list of all products.
 
-Endpoints
-POST /products: Create a new product.
-GET /products: Retrieve all products.
+## Endpoints
+
+- **POST /products**: Create a new product.
+- **GET /products**: Retrieve all products.
+
 Each endpoint handles JSON requests and responses, including appropriate HTTP status codes and error handling.
 
 .
