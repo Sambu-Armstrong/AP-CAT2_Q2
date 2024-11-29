@@ -7,12 +7,7 @@ This project demonstrates a simple REST API using FastAPI, managing a Product re
 
 ## Installation
 
-1. **Clone the Repository**:
-
-    ```sh
-    git clone <repository_url>
-    cd rest_api_project
-    ```
+1. Clone the Repository
 
 2. **Create a Virtual Environment**:
 
@@ -58,6 +53,7 @@ This project demonstrates a simple REST API using FastAPI, managing a Product re
 Use the provided `client.py` script to interact with the API, adding name, description and price of the product
 
 1. **Add New Products**:
+Open a new terminal and run
 
     ```sh
     python client.py
